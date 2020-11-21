@@ -286,7 +286,7 @@ class B2Math {
 		
 		#elseif js
 		
-		return untyped __js__ ("Number.MIN_VALUE");
+		return js.Syntax.code("Number.MIN_VALUE");
 		
 		#else
 		
@@ -305,7 +305,7 @@ class B2Math {
 		
 		#elseif js
 		
-		return untyped __js__ ("Number.MAX_VALUE");
+		return js.Syntax.code("Number.MAX_VALUE");
 		
 		#else
 		
