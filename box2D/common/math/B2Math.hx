@@ -280,11 +280,7 @@ class B2Math {
 	
 	private static inline function get_MIN_VALUE ():Float {
 		
-		#if flash
-		
-		return untyped __global__ ["Number"].MIN_VALUE;
-		
-		#elseif js
+		#if js
 		
 		return js.Syntax.code("Number.MIN_VALUE");
 		
@@ -299,11 +295,7 @@ class B2Math {
 	
 	private static inline function get_MAX_VALUE ():Float {
 		
-		#if flash
-		
-		return untyped __global__ ["Number"].MAX_VALUE;
-		
-		#elseif js
+		#if js
 		
 		return js.Syntax.code("Number.MAX_VALUE");
 		
