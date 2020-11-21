@@ -887,7 +887,7 @@ class B2World
 	 * @param point1 the ray starting point
 	 * @param point2 the ray ending point
 	 */
-	public function rayCast(callbackMethod:B2Fixture -> B2Vec2 -> B2Vec2 -> Float -> Dynamic, point1:B2Vec2, point2:B2Vec2):Void
+	public function rayCast(callbackMethod:(B2Fixture, B2Vec2, B2Vec2, Float) -> Float, point1:B2Vec2, point2:B2Vec2):Void
 	{
 		var broadPhase:IBroadPhase = m_contactManager.m_broadPhase;
 		var output:B2RayCastOutput = new B2RayCastOutput ();
